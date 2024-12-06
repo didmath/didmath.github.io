@@ -1,69 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
-  <title>Memory Game</title>
+  <title>Jeu de mémoire</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <dialog id="dialog" class="dialog">
+    <h1>Projet personnel</h1>
+    <hr>
+    <p><i>Design web gr.1 - Automne 2024</i></p>
+    <div id="contenu">
+      <div id="texte">
+        <p><b>Réalisé par</b><br><i>Didier Mathieu</i></p>
+        <p><b>Inspiration</b><br>
+          <a href="https://marina-ferreira.github.io/memory-game/" target="_blank">
+            https://marina-ferreira.github.io/memory-game/
+          </a>
+        </p>
+      </div>
+      <div id="image"><img src="img/megaman.png" alt="Image de Megaman"></div>
+    </div>
+    <div class="button">
+      <button id="close-dialog">Fermer la fenêtre</button>
+    </div>
+    <i><a href="#" id="disable-dialog" class="close-link">Ne plus afficher cette fenêtre</a></i>
+  </dialog>
+
+  <div id="compteur">
+    <div id="minuteur">
+      Temps : 00:00
+    </div>
+    <div id="meilleur-temps">
+      Meilleur temps : --:--
+    </div>
+  </div>
+
   <section class="memory-game">
     <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
+      <img class="front-face" src="/img/Barrel-Exhaust-Outlaw-BMW-S1000RR-2.png" alt="BMW S1000RR" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
+      <img class="front-face" src="/img/Barrel-Exhaust-Outlaw-BMW-S1000RR-2.png" alt="BMW S1000RR" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
+      <img class="front-face" src="/img/poussin.jpg" alt="Poussin" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
+      <img class="front-face" src="/img/poussin.jpg" alt="Poussin" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
+      <img class="front-face" src="/img/hey-guys-auston-matthews-forehead-here-for-an-ama-we-are-v0-1xjh2mq5j8uc1.png" alt="Auston Matthews" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
+      <img class="front-face" src="/img/hey-guys-auston-matthews-forehead-here-for-an-ama-we-are-v0-1xjh2mq5j8uc1.png" alt="Auston Matthews" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
+      <img class="front-face" src="/img/nick-suzuki.jpg" alt="Nick Suzuki" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
+      <img class="front-face" src="/img/nick-suzuki.jpg" alt="Nick Suzuki" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
+      <img class="front-face" src="/img/kessel.png" alt="Phil Kessel" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
+      <img class="front-face" src="/img/kessel.png" alt="Phil Kessel" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
+      <img class="front-face" src="/img/muffins-chocolatechip-650.png" alt="Muffin" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
+      <img class="front-face" src="/img/muffins-chocolatechip-650.png" alt="Muffin" />
       <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
     </div>
   </section>
 
   <script src="scripts.js"></script>
 </body>
+
 </html>
