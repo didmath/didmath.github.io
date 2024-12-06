@@ -10,7 +10,7 @@ let intervalId;
 
 // Variables pour le meilleur temps
 const afficherMeilleurTemps = document.getElementById("meilleur-temps");
-let meilleurTemps = localStorage.getItem("meilleurTemps") || null;
+let meilleurTemps = localStorage.getItem("meilleur-temps") || null;
 
 /**
  * Met à jour à l'écran le meilleur temps si il existe
